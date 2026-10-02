@@ -224,6 +224,61 @@ a { color: inherit; }
   font-size: 1.05rem;
 }
 
+/* Featured Project */
+.section-feature {
+  background: linear-gradient(180deg, rgba(212, 160, 23, 0.06), transparent 60%), var(--bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.feature-copy p {
+  color: var(--text-muted);
+  font-size: 1.02rem;
+}
+
+.feature-copy strong { color: var(--text); }
+
+.feature-tech {
+  font-size: 0.85rem;
+  color: var(--accent-soft);
+  opacity: 0.9;
+}
+
+.feature-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.highlight-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.highlight-card h3 {
+  font-size: 0.95rem;
+  color: var(--accent-soft);
+}
+
+.highlight-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .feature-grid { grid-template-columns: 1fr; }
+}
+
 /* Timeline */
 .timeline {
   display: flex;
@@ -286,6 +341,14 @@ a { color: inherit; }
 }
 
 .timeline-content li { margin-bottom: 8px; }
+
+.inline-link {
+  color: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.inline-link:hover { text-decoration: underline; }
 
 .timeline-tech {
   font-size: 0.82rem;
