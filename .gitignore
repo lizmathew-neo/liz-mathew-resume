@@ -1,0 +1,4 @@
+.tools-venv/
+resume_extracted.txt
+.DS_Store
+*.log
