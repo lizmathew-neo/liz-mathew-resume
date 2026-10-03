@@ -194,6 +194,83 @@ a { color: inherit; }
   font-size: 0.85rem;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.hero-aside {
+  position: sticky;
+  top: 100px;
+}
+
+.pitch-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: 0 20px 60px -24px rgba(212, 160, 23, 0.25);
+}
+
+.pitch-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  color: var(--accent-soft);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pitch-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+.pitch-copy {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.pitch-list {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.pitch-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.pitch-icon {
+  color: var(--accent);
+  font-size: 0.5rem;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+.pitch-cta {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-aside {
+    position: static;
+  }
+}
+
 /* Sections */
 .section { padding: 80px 0; }
 .section-alt { background: var(--bg-alt); }
