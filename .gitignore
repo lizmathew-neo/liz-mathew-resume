@@ -2,7 +2,3 @@
 resume_extracted.txt
 .DS_Store
 *.log
-node_modules/
-dist/
-.wrangler/
-.dev.vars
