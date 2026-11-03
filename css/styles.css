@@ -512,6 +512,51 @@ a { color: inherit; }
   font-size: 0.85rem;
 }
 
+/* Research */
+.research-card {
+  max-width: 820px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.research-card p { margin-bottom: 14px; color: var(--text-muted); }
+
+.research-card .research-lead {
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+.research-card strong { color: var(--accent-soft); }
+
+.research-card .research-focus {
+  color: var(--text);
+  font-size: 1.05rem;
+  background: rgba(212, 160, 23, 0.08);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.research-focus-label {
+  display: block;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.research-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
 /* Recommendations */
 .reco-grid {
   display: grid;
