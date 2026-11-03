@@ -512,6 +512,42 @@ a { color: inherit; }
   font-size: 0.85rem;
 }
 
+/* Recommendations */
+.reco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.reco-card {
+  margin: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.reco-card blockquote {
+  margin: 0 0 18px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.reco-card blockquote p { margin-bottom: 12px; }
+.reco-card blockquote p:last-child { margin-bottom: 0; }
+
+.reco-card figcaption span {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.reco-card figcaption strong { color: var(--accent-soft); }
+
+.reco-link { margin-top: 24px; text-align: center; }
+
 /* Contact */
 .section-contact { text-align: center; }
 
