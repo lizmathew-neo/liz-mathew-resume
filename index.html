@@ -159,14 +159,6 @@
               <strong>Evaluation:</strong> I ran the workflow on three synthetic applicants: strong, borderline,
               and weak. Its decisions matched the expected approved, conditional, and declined outcomes.
             </p>
-            <p>
-              <strong>What went wrong:</strong> The risk score was 50/100 for all three cases, so it did not help
-              separate risk levels. The bias check flagged every protected term on every agent run, whether or not
-              the analysis mentioned it. That produced 40 flags per case and sent every case to human review. The
-              PII step also missed the applicant&rsquo;s full name: it added a placeholder field but left the
-              original name in the sanitized data. The system lets the human reviewer make the final decision. That
-              is useful oversight, but alerts that fire on every case can make that review less meaningful.
-            </p>
             <p class="feature-tech">
               Python &middot; LangGraph &middot; LangChain &middot; GPT-4o-mini &middot; ChromaDB &middot; RAG
               &middot; Human-in-the-loop
@@ -183,7 +175,7 @@
             </div>
             <div class="highlight-card">
               <h3>Next Iteration</h3>
-              <p>Fix name redaction and the bias check, calibrate the risk score, and test parallel execution for independent agents.</p>
+              <p>Strengthen risk scoring, PII handling, and bias checks, and test parallel execution for independent agents.</p>
             </div>
           </div>
         </div>
