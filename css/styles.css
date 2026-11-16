@@ -524,6 +524,8 @@ a { color: inherit; }
 
 .research-card p { margin-bottom: 14px; color: var(--text-muted); }
 
+.research-card-secondary { margin-top: 20px; }
+
 .research-card .research-lead {
   color: var(--text);
   font-size: 1.1rem;

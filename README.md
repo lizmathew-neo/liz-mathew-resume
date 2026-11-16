@@ -1,8 +1,8 @@
 # Liz Mathew — Resume Website
 
-Personal resume/portfolio site for Liz Mathew, targeting Senior Delivery Manager roles.
+Personal research and portfolio site for Liz Mathew, Technical Architect transitioning to AI research.
 
-Live site: _added after first deploy_
+Live site: https://lizmathew.com/
 
 ## Stack
 
