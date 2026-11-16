@@ -352,6 +352,25 @@ a { color: inherit; }
 
 .feature-copy strong { color: var(--text); }
 
+.feature-quote {
+  margin: 0;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent);
+  border-radius: 10px;
+  background: rgba(212, 160, 23, 0.08);
+}
+
+.feature-copy .feature-quote p {
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.feature-quote footer {
+  color: var(--accent-soft);
+  font-size: 0.85rem;
+}
+
 .feature-tech {
   font-size: 0.85rem;
   color: var(--accent-soft);
