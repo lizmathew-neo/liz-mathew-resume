@@ -51,6 +51,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 32px;
   height: 68px;
 }
 
@@ -60,12 +61,14 @@ a { color: inherit; }
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--text);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 20px;
 }
 
 .nav-links a {
@@ -73,6 +76,7 @@ a { color: inherit; }
   color: var(--text-muted);
   font-weight: 500;
   font-size: 0.95rem;
+  white-space: nowrap;
   transition: color 0.2s ease;
 }
 
@@ -657,7 +661,7 @@ a { color: inherit; }
 }
 
 /* Responsive */
-@media (max-width: 760px) {
+@media (max-width: 1180px) {
   .nav-toggle { display: flex; }
 
   .nav-links {
