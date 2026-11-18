@@ -128,6 +128,32 @@
           <a href="#contact" class="btn btn-ghost">Discuss the Research</a>
         </div>
       </div>
+      <div id="ai-assist-pilot" class="research-card">
+        <p class="research-lead">
+          Planned pilot: Hint vs. Full AI assistance in compliance document review
+        </p>
+        <p class="research-focus">
+          <span class="research-focus-label">Question</span>
+          When reviewers get an AI&rsquo;s recommended answer instead of a light hint, do they catch more errors, or
+          do they start trusting the AI and miss more?
+        </p>
+        <p>
+          I built an AI Document Assistant into the NeoRegSeaX seafarer registry. It runs on Amazon Nova through AWS
+          Bedrock, and administrators set each reviewer to one of two modes. <strong>Hint</strong> shows only a
+          0&ndash;100 confidence score and a traffic light. <strong>Full</strong> adds detailed findings, a
+          comparison of profile data against the document, and a suggested decision. The AI is advisory: the
+          reviewer still makes every decision, and the system records whether each Full-mode suggestion was
+          followed or overridden.
+        </p>
+        <p>
+          The pilot will give colleagues seafarer applications containing planted errors, such as a mismatched
+          name, an expired passport, or the wrong document type. It will compare Hint and Full on errors caught,
+          errors missed, and how often reviewers follow an incorrect AI suggestion. The aim is to help businesses
+          decide how much AI guidance to give reviewers in regulated processes, and where more guidance starts to
+          add risk.
+        </p>
+        <p><strong>Status:</strong> Tooling built; pilot planned. The protocol and results will be published here.</p>
+      </div>
       <div class="research-card research-card-secondary">
         <p class="research-focus">
           <span class="research-focus-label">Prior research interest</span>
@@ -303,9 +329,14 @@
             chatbot-assisted applicant support. I scoped each capability by where AI adds value and where it adds
             risk in a regulated process.
           </p>
+          <p>
+            I also implemented the platform&rsquo;s AI Document Assistant, which supports registrars reviewing
+            seafarer documents and is the basis for my
+            <a href="#ai-assist-pilot" class="inline-link">planned Hint vs. Full pilot</a>.
+          </p>
           <p class="feature-tech">
             Spring Boot microservices &middot; React/TypeScript micro-frontends (Module Federation) &middot;
-            RabbitMQ event-driven architecture &middot; PostgreSQL &middot; AWS
+            RabbitMQ event-driven architecture &middot; PostgreSQL &middot; AWS &middot; Amazon Nova on AWS Bedrock
           </p>
         </div>
         <div class="feature-highlights">
@@ -320,6 +351,10 @@
           <div class="highlight-card">
             <h3>AI Roadmap</h3>
             <p>Defined direction for OCR/NLP document intake, compliance anomaly detection, and chatbot-assisted applicant support.</p>
+          </div>
+          <div class="highlight-card">
+            <h3>AI Document Assistant</h3>
+            <p>Implemented advisory AI review of seafarer documents on Amazon Nova, with per-user Hint or Full modes, profile-vs-document checks, and an audit trail of followed and overridden suggestions.</p>
           </div>
         </div>
         </div>
