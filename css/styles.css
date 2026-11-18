@@ -409,6 +409,25 @@ a { color: inherit; }
   .feature-grid { grid-template-columns: 1fr; }
 }
 
+.feature-video {
+  margin: 28px 0 0;
+}
+
+.feature-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.feature-video figcaption {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 /* Timeline */
 .timeline {
   display: flex;
